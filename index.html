@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app">
+        <header>
+            <p class="eyebrow">Programação para Web</p>
+            <h1>Exercícios JavaScript</h1>
+        </header>
+
+        <section class="exercise">
+            <h2>Exercício 1</h2>
+            <p>Leia dois números e gere uma tabela com soma, subtração, multiplicação, divisão e resto da divisão.</p>
+
+            <div class="form-row">
+                <label>
+                    Primeiro número
+                    <input id="numero-1" type="number">
+                </label>
+
+                <label>
+                    Segundo número
+                    <input id="numero-2" type="number">
+                </label>
+
+                <button id="gerar-tabela">Gerar tabela</button>
+            </div>
+
+            <div id="tabela-operacoes"></div>
+        </section>
+
+        <section class="exercise">
+            <h2>Exercício 2</h2>
+            <p>Associe uma função ao evento <code>mouseover</code> da imagem.</p>
+
+            <img id="imagem-evento" src="https://placehold.co/320x180/png" alt="Imagem de exemplo">
+        </section>
+
+        <section class="exercise">
+            <h2>Exercício 3</h2>
+            <p>Crie um contador que aumente sempre que o valor do campo de seleção mudar.</p>
+
+            <label>
+                Escolha uma opção
+                <select id="selecao-contador">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="dom">DOM</option>
+                </select>
+            </label>
+        </section>
+
+        <section class="exercise">
+            <h2>Exercício 4</h2>
+            <p>Impeça que as letras Q, W e X sejam digitadas no campo.</p>
+
+            <label>
+                Texto
+                <input id="campo-sem-qwx" type="text">
+            </label>
+        </section>
+
+        <section class="exercise">
+            <h2>Exercício 5</h2>
+            <p>Use delegação de eventos para inserir valores no campo e calcular o resultado.</p>
+
+            <input id="display-calculadora" type="text" readonly>
+
+            <div id="botoes-calculadora" class="calculadora">
+                <button data-value="7">7</button>
+                <button data-value="8">8</button>
+                <button data-value="9">9</button>
+                <button data-value="/">/</button>
+
+                <button data-value="4">4</button>
+                <button data-value="5">5</button>
+                <button data-value="6">6</button>
+                <button data-value="*">*</button>
+
+                <button data-value="1">1</button>
+                <button data-value="2">2</button>
+                <button data-value="3">3</button>
+                <button data-value="-">-</button>
+
+                <button data-value="C">C</button>
+                <button data-value="0">0</button>
+                <button data-value="=">=</button>
+                <button data-value="+">+</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
